@@ -60,11 +60,11 @@
                                 <form action="<?php echo site_url("login_admin/login_check");?>" method="post" accept-charset="utf-8">					
                                 <div class="form-group">
 									<label for="username">Username</label>
-									<input type="text" name="username" value="" placeholder="Your username" class="col-xs-12 form-control" required />
+									<input type="text" name="username" value="admin" placeholder="Your username" class="col-xs-12 form-control" required />
 								</div>
 								<div class="form-group">
 									<label for="password">Password</label>
-									<input type="password" name="password" value="" placeholder="Your password" class="col-xs-12 form-control" required />
+									<input type="password" name="password" value="123456" placeholder="Your password" class="col-xs-12 form-control" required />
 								</div>
 								<label class="checkbox"><input type="checkbox" name="remember"><b><i>Keep me signed in</i></b></label>
 								<input type="submit" name="__submit" value="Sign In" class="btn btn-primary btn-block btn-lg" />
