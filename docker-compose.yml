@@ -33,7 +33,7 @@ services:
       MYSQL_ROOT_PASSWORD: refill
     command: mysqld --sql_mode=""
     volumes:
-      - ./database:/var/lib/
+      - ./databases:/var/lib/
 
   adminer:
     image: adminer
