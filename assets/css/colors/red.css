@@ -1,0 +1,124 @@
+body {
+  background-color: #610F0F !important;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px 0px 20px;
+  color: #AF4848;
+}
+
+.navbar-default .navbar-toggle:focus{background-color:#B33636;}
+
+.navbar {
+	background-image: url('../../../media/template/bgtop.png');
+	background-color: #DC4C4C;
+	border-bottom: 3px solid #B33636;
+}
+
+.navbar .nav>li>a:hover {
+  color: #ffffff;
+  background-color: #B33636;
+}
+
+.navbar .navbar-brand,
+.navbar .nav>li>a {
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px;
+}
+
+.navbar-default .navbar-toggle .icon-bar{background-color:#fff;}
+
+ul.page-sidebar-menu > li > a > .arrow:before,
+ul.page-sidebar-menu > li > a > .arrow.open:before {
+  color: #ccc !important;
+}
+ul.page-sidebar-menu > li.active > a .arrow:before, 
+ul.page-sidebar-menu > li.active > a .arrow.open:before {
+  color: #fff !important;
+}
+
+ul.page-sidebar-menu > li > a {
+  /*border-top: 1px solid #3F5061 !important;*/
+  color: #EAD4D4 !important;
+  font-weight: 600;
+}
+
+ul.page-sidebar-menu > li a i {
+  color: #EAD4D4 !important;
+}
+
+ul.page-sidebar-menu ul.sub-menu > li > a {
+  font-weight: 600 !important;
+  color: #EAD4D4 !important;
+}
+
+ul.page-sidebar-menu ul.sub-menu > li > a:hover {
+  color: #EAD4D4 !important;
+  background: #9C1616 !important; 
+}
+
+ul.page-sidebar-menu > li.open > a,
+ul.page-sidebar-menu > li > a:hover,
+ul.page-sidebar-menu > li:hover > a {
+  background: #9C1616;
+  /*border-top: 1px solid #e8e8e8;*/
+}
+
+ul.page-sidebar-menu > li.active > a{
+  background: #E48522 !important;
+  border-top-color: transparent !important;
+  color:#fff !important;
+} 
+
+ul.page-sidebar-menu ul.sub-menu > li.open > a {
+  color: #EAD4D4 !important;
+  background: #9C1616 !important; 
+}
+
+ul.page-sidebar-menu > li.active > a .selected {
+  right:-7px;
+  top:0px;
+  width: 7px;
+  height: 39px;
+  background-image: url("../../img/sidebar-menu-arrow-orange.png");
+} 
+
+.footertext{
+  text-align:right;
+  color:#EAD4D4;
+}
+
+.welcomeside img{
+  border:4px solid #945454;
+}
+
+.welcomesidetext{
+  margin:10px 0 0 0;
+  font-size:16px;
+  color:#EAD4D4;
+  line-height:100%;
+}
+
+.headtext{
+  color:#A02A2A;
+}
+
+.footer {
+    background-color: #610F0F;
+  }
+
+@media (max-width: 991px) {
+	ul.page-sidebar-menu > li.active > a {
+    	color: #ffffff !important;
+    	background-color: #E48522 !important;
+  	}
+
+  	.page-sidebar.in {
+		border-top: 0 !important;
+		margin: 20px 20px 0px;
+		position: relative;
+		z-index: 5;
+		border-bottom: 6px solid #B33636;
+	}
+}

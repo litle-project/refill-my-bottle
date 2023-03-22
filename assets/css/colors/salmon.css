@@ -1,0 +1,124 @@
+body {
+  background-color: #52323D !important;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	padding: 10px 20px 0px 20px;
+	color: #52323D;
+}
+
+.navbar-default .navbar-toggle:focus{background-color:#BF5C5C;}
+
+.navbar {
+	background-image: url('../../../media/template/bgtop.png');
+	background-color: #EC7979;
+	border-bottom: 3px solid #BF5C5C;
+}
+
+.navbar .nav>li>a:hover {
+	color: #ffffff;
+	background-color: #BF5C5C;
+}
+
+.navbar .navbar-brand,
+.navbar .nav>li>a {
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px;
+}
+
+.navbar-default .navbar-toggle .icon-bar{background-color:#fff;}
+
+ul.page-sidebar-menu > li > a > .arrow:before,
+ul.page-sidebar-menu > li > a > .arrow.open:before {
+  color: #ccc !important;
+}
+ul.page-sidebar-menu > li.active > a .arrow:before, 
+ul.page-sidebar-menu > li.active > a .arrow.open:before {
+  color: #fff !important;
+}
+
+ul.page-sidebar-menu > li > a {
+  /*border-top: 1px solid #3F5061 !important;*/
+  color: #CACACA !important;
+  font-weight: 600;
+}
+
+ul.page-sidebar-menu > li a i {
+  color: #CACACA !important;
+}
+
+ul.page-sidebar-menu ul.sub-menu > li > a {
+  font-weight: 600 !important;
+  color: #CACACA !important;
+}
+
+ul.page-sidebar-menu ul.sub-menu > li > a:hover {
+  color: #CACACA !important;
+  background: #3A222A !important; 
+}
+
+ul.page-sidebar-menu > li.open > a,
+ul.page-sidebar-menu > li > a:hover,
+ul.page-sidebar-menu > li:hover > a {
+  background: #3A222A;
+  /*border-top: 1px solid #e8e8e8;*/
+}
+
+ul.page-sidebar-menu > li.active > a{
+  background: #BF5C5C !important;
+  border-top-color: transparent !important;
+  color:#fff !important;
+} 
+
+ul.page-sidebar-menu ul.sub-menu > li.open > a {
+  color: #CACACA !important;
+  background: #3A222A !important; 
+}
+
+ul.page-sidebar-menu > li.active > a .selected {
+  right:-7px;
+  top:0px;
+  width: 7px;
+  height: 39px;
+  background-image: url("../../img/sidebar-menu-arrow-salmon.png");
+}
+
+.footertext{
+  text-align:right;
+  color:#CACACA;
+}
+
+.welcomeside img{
+  border:4px solid #94546A;
+}
+
+.welcomesidetext{
+  margin:10px 0 0 0;
+  font-size:16px;
+  color:#CACACA;
+  line-height:100%;
+}
+
+.headtext{
+  color:#C35656;
+}
+
+.footer {
+    background-color: #52323D;
+  }
+
+@media (max-width: 991px) {
+	ul.page-sidebar-menu > li.active > a {
+    	color: #ffffff !important;
+    	background-color: #BF5C5C !important;
+  	}
+
+  	.page-sidebar.in {
+		border-top: 0 !important;
+		margin: 20px 20px 0px;
+		position: relative;
+		z-index: 5;
+		border-bottom: 6px solid #BF5C5C;
+	}
+}

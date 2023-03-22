@@ -1,0 +1,45 @@
+version: "3.7"
+
+networks:
+  local:
+    driver: bridge
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: refill-app
+    working_dir: /var/www/html
+    restart: unless-stopped
+    networks:
+      - local
+    ports:
+      - 8200:80
+      - 8300:433
+    volumes:
+      - .:/var/www/html
+
+  mysql:
+    image: mysql:8.0
+    hostname: mysql
+    container_name: refill-mysql
+    networks:
+      - local
+    environment:
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: refill
+      MYSQL_DATABASE: management
+      MYSQL_ROOT_PASSWORD: refill
+    command: mysqld --sql_mode=""
+    volumes:
+      - ./database:/var/lib/
+
+  adminer:
+    image: adminer
+    container_name: refill-adminer
+    restart: always
+    networks:
+      - local
+    ports:
+      - 8080:8080

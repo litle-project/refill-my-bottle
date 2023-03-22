@@ -1,0 +1,1 @@
+<?phpclass Dropdown extends CI_Model {		function set($table,$id,$name){		$this->db->where("deleted","0");		$this->db->order_by($name, "asc");		$query = $this->db->get($table);				$data[""]="Please Select";		foreach($query->result_array() as $row){			$data[$row[$id]] = $row[$name];		}				return $data;			}}
